@@ -26,8 +26,9 @@ app.get("/blog", function(req, res){
 })
 
 //para criar um parametro na rota, colocamos o : na frente do nome do parametro. Ex: /blog/:id.
-app.get("/ola/:nome",function(req, res){
-    res.send("Olá " + req.params.nome);
+//voce so consegue enviar um send por vez, se quiser enviar mais de um, precisa criar um array.
+app.get("/ola/:nome/:cargo",function(req, res){
+    res.send("Olá " + req.params.nome + " você é " + req.params.cargo);
 } )
 
 
