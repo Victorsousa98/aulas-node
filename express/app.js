@@ -14,11 +14,12 @@ const app = express();
 //para criar uma rota, usamos o método get do express e passamos uma função como parâmetro que será executada quando o usuário acessar a rota.
 // o método get recebe dois parâmetros, o primeiro é a rota e o segundo é uma função que será executada quando o usuário acessar a rota.
 app.get("/", function(req, res){
-    res.send("Seja bem vindo ao meu site!");
-})
+    res.sendFile(__dirname + "/html/index.html");
+})//o sendfile serve para enviar arquivos para o navegador do usuário (ex: index.html). 
+// o __dirname é uma variável global que representa o diretório atual do arquivo que está sendo executado. 
 
 app.get("/sobre", function(req, res){
-    res.send("Sobre nós");
+    res.sendFile(__dirname + "/html/sobre.html");
 })
 
 app.get("/blog", function(req, res){
