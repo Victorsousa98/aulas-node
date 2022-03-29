@@ -42,3 +42,5 @@ UPDATE usuarios SET nome = 'Victor' WHERE nome = 'julia';
 -- para instalar a biblioteca: npm install sequelize
 -- para trabalhar com mysql, usar o sequelize e mysql
 
+-- SHOW DATABASES serve para mostrar as bases de dados
+
