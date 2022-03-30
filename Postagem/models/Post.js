@@ -9,5 +9,7 @@ const Post = db.sequelize.define('postagem', {
     }
 })
 
+module.exports = Post
+
 // Post.sync({force: true})
 //USAR SYNC UMA UNICA VEZ
